@@ -116,17 +116,3 @@ Extensive test coverage (>95%)
 Testnet deployment before mainnet
 
 ⚠️ Author assumes NO LIABILITY for undetected vulnerabilities or misuse
-
-🧪 Recommended Workflow
-```mermaid
-flowchart TD
-    A[Write Contract] --> B[Run Static Analysis]
-    B --> C{Findings?}
-    C -->|Yes| D[Apply Mitigations]
-    C -->|No| E[Run Unit Tests]
-    D --> E
-    E --> F[Deploy to Testnet]
-    F --> G[Run Runtime Analysis]
-    G --> H[Professional Audit]
-    H --> I[Mainnet Deployment]
-```‍‍‍‍
